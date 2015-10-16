@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+teste
 <project name="TheProject" default="build" basedir=".">
 
     <!-- Altere estas propriedades adequando-as ao seu projeto -->
