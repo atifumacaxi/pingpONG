@@ -2,7 +2,6 @@
 namespace core;
 
 /**
- * @author Leonardo Rocha <leonardo.lsrocha@gmail.com>
  * @package core
  */
 class Database extends \PDO
@@ -21,7 +20,7 @@ class Database extends \PDO
      * @var string
      * @static
      */
-    private static $user = 'u331295231_party';
+    private static $user = 'u369866392_admin';
     
     /**
      * Database user password.
@@ -29,7 +28,7 @@ class Database extends \PDO
      * @var string
      * @static
      */
-    private static $password = '123456';
+    private static $password = 'engenharia2015';
     
     /**
      * Database table name.
@@ -37,7 +36,7 @@ class Database extends \PDO
      * @var string
      * @static
      */
-    private static $database = 'u331295231_party';
+    private static $database = 'u369866392_ongs';
 
     public function __construct()
     {

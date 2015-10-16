@@ -33,7 +33,7 @@ if ($isLoggedIn) {
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>99 Party! | Festas em S&atilde;o Paulo</title>
+        <title>pingpONG - Ache sua ONG!</title>
 
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="description" content="O 99 Party permite que voc&ecirc; localize festas estudant&iacute;s em S&atilde;o Paulo." />
@@ -133,7 +133,7 @@ if ($isLoggedIn) {
             <!--/ MODAL ADVANCED SEARCH -->
                 
             <header>
-                <h1>99 Party</h1>
+                <h1>pingpONG</h1>
                 
                 <div id="header-right"> 
                     
@@ -142,6 +142,7 @@ if ($isLoggedIn) {
                     <div id="search-options" class="input-append">
                         <input class="search-box-input" id="endereco_prox" type="text" placeholder="Digite o endere&ccedil;o ou a localiza&ccedil;&atilde;o aproximada" name="endereco_prox" onblur="habilitarOuDesabilitarDist();"/>
                         <button class="btn" type="button" onclick="pesquisar();"> Buscar </button>
+						<button class="btn"> <a href="cadastro-republica.php" target="_blank"> Cadastre sua ONG! </a></button>
    		                
                     </div>
 	                

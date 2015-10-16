@@ -1,10 +1,8 @@
 <?php
-
 namespace core;
 
 use core\Database;
 
-error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
 /**
  * @package core
  */
@@ -27,7 +25,11 @@ class Republicas
             'phone' => FILTER_SANITIZE_STRING,
             'email' => FILTER_SANITIZE_EMAIL,
             'address' => FILTER_SANITIZE_STRING,
-            
+            'gener' => FILTER_SANITIZE_STRING,
+            'num_dwellers' => FILTER_SANITIZE_NUMBER_INT,
+            'num_vacancies' => FILTER_SANITIZE_NUMBER_INT,
+            'vacancy_type' => FILTER_SANITIZE_STRING,
+            'price' => $filterFloat,
             'more' => FILTER_SANITIZE_STRING
         );
 
@@ -42,11 +44,13 @@ class Republicas
         if ($valid) {
             $query = $database->prepare('
                 INSERT INTO republicas (
-                    name, latitude, longitude, phone, email,
-                    address, who_posted, more 
+                    name, latitude, longitude, phone, email, price,
+                    address, gener, vacancy_type, num_dwellers, num_vacancies, 
+                    who_posted, more 
                 ) VALUES (
-                    :name, :latitude, :longitude, :phone, :email,
-                    :address, :who_posted, :more
+                    :name, :latitude, :longitude, :phone, :email, :price,
+                    :address, :gener, :vacancy_type, :num_dwellers, 
+                    :num_vacancies, :who_posted, :more
                 )
             ');
 

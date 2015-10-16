@@ -2,7 +2,7 @@
 namespace core;
 
 /**
- * @author Leonardo Rocha <leonardo.lsrocha@gmail.com>
+
  * @package core
  */
 class Database extends \PDO

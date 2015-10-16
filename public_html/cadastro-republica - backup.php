@@ -75,7 +75,32 @@ if (isset($_POST{'name'})) {
                         <label>E-mail</label>
                         <input type="text" name="email" class="input-block-level" /><br />
                     
-       
+                        <!-->
+						<label>Quarto</label>
+                        <select name="vacancy_type">
+                            <option value="null"></option>
+                            <option value="Dividido">Compartilhado</option>
+                            <option value="Individual">Individual</option>
+                        </select><br />
+                        
+                        <label>Tipo de rep&uacute;blica</label>
+                        <select name="gener">
+                            <option value="null">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminina">Feminina</option>
+                            <option value="Mista">Mista</option>
+                        </select><br />
+                    
+                        <label>Pre&ccedil;o</label>
+                        <input type="text" name="price" onKeyPress="return(MascaraMoeda(this,'.',',',event));" /><br />
+                    
+                        <label>N&uacute;mero de Moradores</label>
+                        <input type="number" min="0" max="100" name="num_dwellers" value="0" class="input-mini" /><br />
+                    
+                        <label>N&uacute;mero de Vagas</label>
+                        <input type="number" min="0" max="100" name="num_vacancies" value="0" class="input-mini" /><br />
+                    
+						<-->
 						
                         <label>Mais Informa&ccedil;&otilde;es</label>
                         <textarea id="more" rows =3 cols = 70 placeholder="Digite aqui mais informa&ccedil;&otilde;es" name="more" size ="60" maxlength="2400" class="input-block-level"></textarea>
@@ -88,7 +113,7 @@ if (isset($_POST{'name'})) {
                         </div>
                     
                         <button id="botao_enviar" type="button" onclick="geocodificar();" class="btn btn-success">Confirmar endere&ccedil;o</button>
-                        <input id="envia_form" style="display: none;" type="submit" value="Cadastrar ONG" class="btn btn-info" />
+                        <input id="envia_form" style="display: none;" type="submit" value="Cadastrar rep&uacute;blica" class="btn btn-info" />
                     </form>
 
             </div>
