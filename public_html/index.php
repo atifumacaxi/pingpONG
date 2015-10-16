@@ -36,7 +36,7 @@ if ($isLoggedIn) {
         <title>pingpONG - Ache sua ONG!</title>
 
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta name="description" content="O 99 Party permite que voc&ecirc; localize festas estudant&iacute;s em S&atilde;o Paulo." />
+        <meta name="description" content="O pingpONG permite que voc&ecirc; localize ONGs." />
         
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
         <link href="css/home-minified.css" rel="stylesheet" type="text/css" />
