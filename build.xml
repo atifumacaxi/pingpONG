@@ -32,7 +32,7 @@
 	</target>
 	
 	<target name="test">
-		<phpunit haltonerror="true" haltonfailure="true" configuration="phpunit-sparse.xml" pharLocation="C:\Program Files (x86)\PHP\php-5.6.14-Win32-VC11-x64>
+		<phpunit haltonerror="true" haltonfailure="true">
 			<formatter type="plain" usefile="false"/>
 			<batchtest>
 				<fileset dir="src">
